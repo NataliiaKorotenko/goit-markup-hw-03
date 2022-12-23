@@ -1,10 +1,23 @@
 
-
 :root {
 --first-title-color: #FFFFFF;
 --second-title-color: #2E2F42;
 --text-color: #434455;
 }
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;}
+
+ul {
+        margin: 0;
+        padding-left: 0;
+        display: block;}
+
+img {
+    display: block;}
 
 body{
     font-family: Roboto, sans-serif;  
@@ -20,9 +33,30 @@ logo{
     list-style: none}
 
 .link{
-    text-decoration: none;}
+    text-decoration: none;
+}
+
+.container {
+    width: 1158;
+    margin-left: 156px;
+    margin-right: 156px;
+    align-items: center;
+
+    outline: 1px solid red;
+background-color: aqua;}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    outline: 1px solid red;}
+
+.header-container { 
+display: flex;
+align-items: center;
+}     
 
 .header-logo { 
+    margin-right: 77px;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -41,14 +75,22 @@ logo{
 
 .header-item {
     color: #2E2F42;
-}  
+} 
+
 .header-nav {
+    margin-right: auto;
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5; 
     letter-spacing: 0.02em;
     color: #2E2F42;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .header-link {
@@ -59,6 +101,11 @@ logo{
     letter-spacing: 0.02em;
     color: #2E2F42;
     }
+
+.contacts list {
+    display: flex;
+    align-items: center;
+    }   
 
 .header-link:hover,
 .header-link:footer { 
@@ -86,12 +133,23 @@ logo{
     color: #434455;
 }
 
+
+
+
 /*----Main----*/
 
-.main {
+.main-container {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
     background: #2E2F42;
 }
+
 .main-title {
+    width: 494px;
+    height: 120px;
+    text-align: center;
+    margin-bottom: 48px;
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 56px;
@@ -101,6 +159,10 @@ logo{
 }
 
 .main-btn {
+    border-radius: 4px;
+    padding: 16px 32px;
+    
+    min-width: 106px;
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 16px;
@@ -111,8 +173,18 @@ logo{
     cursor: pointer;
 }
 
+.filters list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    gap: 24px;
+    }  
 
 .filters-link {
+    justify-content: center;
+    margin-bottom: 71px;
     background: #FFFFFF;
     }  
 
@@ -132,6 +204,15 @@ logo{
     color: #FFFFFF;
     background: #4D5AE5;}
 
+.about {
+    padding-top: 120px;
+    padding-bottom:  120px;
+}
+
+.about-catalog {
+    display: flex;
+    gap: 24;
+}
 
 .about-title {
     font-family: 'Roboto';
@@ -151,6 +232,7 @@ logo{
 }
 
 .product-title {
+    margin-bottom: 72px;
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 36px;
@@ -162,9 +244,14 @@ logo{
 /*---- TEAM----*/
 
 .team {
+    padding-top: 120px;
     background: #F4F4FD;
+    text-align: center;
 }
+
 .team-title {
+    padding-top: 120px;
+    padding-bottom: 72px;
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 36px;
@@ -179,6 +266,8 @@ logo{
 
 .team-tit,
 .menu-tit {
+    margin-top: 32px;
+    margin-bottom: 8px;
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 20px;
@@ -195,7 +284,27 @@ logo{
     color: var(--text-color);
 }
 
+.menu {
+    padding-top: 97px;
+}
+
+.menu-catalog list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 71px;
+}
+
+.menu-list {
+    calc ((100%-48)/3)
+}
+
+.menu-text,
 .menu-text {
+    padding-left: 16;}
+
+.menu-text {
+    padding-bottom: 32px;
     font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.5;
@@ -205,9 +314,19 @@ logo{
 
 /*----Foooter----*/
 
-footer  {
+.footer {
     background: #2E2F42;
     margin: 0;
+}
+
+.footer-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-height: 1440px;
+    height: 310px;
+    padding-left: 156px;
+    gap: 16px;
 }
 
 .footer-logo {
