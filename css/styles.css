@@ -45,8 +45,7 @@ logo {
     margin-right: 156px;
     align-items: center;
 
-    outline: 1px solid red;
-background-color: aqua;}
+    outline: 1px solid red;}
 
 .header {
     padding-top: 24px;
@@ -311,13 +310,12 @@ align-items: center;
 .menu-catalog {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48;
     padding-top: 71px;
 }
 
-.menu-list {
-   width: calc ((100% - 48) /3);
-}
+
 
 .menu-tit,
 .menu-text {
@@ -335,18 +333,21 @@ align-items: center;
 /*----Foooter----*/
 
 .footer {
+    display: block none;
     background: #2E2F42;
     margin: 0;
 }
 
-.footer-block{
+.footer-block {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    max-height: 1440px;
-    height: 310px;
+    width: 264px;
+    height: 110px;
     padding-left: 156px;
-    gap: 16px;
+    row-gap: 16px;
+
+    outline: 1px solid white;
+
 }
 
 .footer-logo {
