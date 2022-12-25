@@ -41,9 +41,11 @@ logo {
 
 .container {
     width: 1158;
-    margin-left: 156px;
-    margin-right: 156px;
+    padding-left: 156px;
+    padding-right: 156px;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 
     outline: 1px solid red;}
 
@@ -141,6 +143,9 @@ align-items: center;
 /*----Main----*/
 
 .main-container {
+    display: flex;
+    flex-grow: 1;
+    padding: 188px 473px 292px 473px;
     margin-left: 0;
     margin-right: 0;
     text-align: center;
@@ -148,7 +153,7 @@ align-items: center;
 }
 
 .main-title {
-    width: 494px;
+    max-width: 494px;
     height: 120px;
     text-align: center;
     margin-bottom: 48px;
@@ -202,6 +207,7 @@ align-items: center;
     color: var(--text-color);
 }
 
+
 .product-title {
     text-align: center;
     margin-bottom: 72px;
@@ -215,7 +221,6 @@ align-items: center;
 
 .product-catalog {
     display: flex;
-    flex-wrap: wrap;
     gap: 24;
 }
 
@@ -331,7 +336,6 @@ align-items: center;
 /*----Foooter----*/
 
 .footer {
-    display: block none;
     background: #2E2F42;
     margin: 0;
 }
@@ -339,8 +343,7 @@ align-items: center;
 .footer-block {
     display: flex;
     flex-direction: column;
-    width: 264px;
-    height: 110px;
+    padding: 100px 100px;
     padding-left: 156px;
     row-gap: 16px;
 
@@ -369,6 +372,7 @@ align-items: center;
 }
 
 .footer-text {
+    max-width: 264px;
     font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.5;
