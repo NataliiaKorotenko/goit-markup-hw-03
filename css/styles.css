@@ -142,17 +142,18 @@ logo {
 /*----Main----*/
 
 .main {
+    padding: 188px 292px;
     background: #2E2F42;
 }
 
 .main-container {
-    padding: 188px 292px;
     text-align: center;
-    margin-bottom: 48px;
+    max-width: 494px;
 }
 
 .main-title {
-    min-width: 494px;
+    
+    margin-bottom: 48px;
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 56px;
@@ -221,19 +222,19 @@ logo {
 .product-catalog {
     display: flex;
     gap: 24px;
+    padding-bottom: 120px;
 }
 
 /*---- TEAM----*/
 
 .team {
-    padding-top: 120px;
     background: #F4F4FD;
     text-align: center;
 }
 
 .team-title {
     padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 36px;
@@ -255,7 +256,6 @@ logo {
 
 .team-tit,
 .menu-tit {
-    margin-top: 32px;
     margin-bottom: 8px;
     font-family: 'Roboto';
     font-weight: 600;
@@ -273,6 +273,12 @@ logo {
     color: var(--text-color);
 }
 
+.team-block,
+.menu-block {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .filters {
     display: flex;
     flex-direction: row;
@@ -280,15 +286,16 @@ logo {
     justify-content: center;
     padding: 0;
     gap: 24px;
+    margin-bottom: 72px;
 }  
 
-.filters-link {
+.filters-link { 
     justify-content: center;
-    margin-bottom: 71px;
     background: #FFFFFF;
     }  
 
 .filters-btn {
+    padding: 12px 24px 12px 24px;
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 16px;
@@ -306,7 +313,7 @@ logo {
 }
 
 .menu {
-    padding-top: 97px;
+    padding: 96px 120px;
 }
 
 .menu-catalog {
@@ -314,10 +321,9 @@ logo {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    padding-top: 71px;
 }
 
-.menu-list {
+.menu-block {
 border-bottom: 1px solid #E7E9FC;
 }
 
@@ -326,7 +332,6 @@ border-bottom: 1px solid #E7E9FC;
     padding-left: 16px;}
 
 .menu-text {
-    padding-bottom: 32px;
     font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.5;
@@ -337,6 +342,7 @@ border-bottom: 1px solid #E7E9FC;
 /*----Foooter----*/
 
 .footer {
+    padding: 100px 100px;
     background: #2E2F42;
     margin: 0;
 }
@@ -344,8 +350,6 @@ border-bottom: 1px solid #E7E9FC;
 .footer-block {
     display: flex;
     flex-direction: column;
-    padding: 100px 100px;
-    padding-left: 156px;
     row-gap: 16px;
 }
 
