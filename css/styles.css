@@ -142,24 +142,22 @@ logo {
 /*----Main----*/
 
 .main {
-    padding: 188px 292px;
+    padding-top: 192px;
+    padding-bottom: 192px;
     background: #2E2F42;
 }
 
-.main-container {
-    text-align: center;
-    max-width: 494px;
-}
-
 .main-title {
-    
-    margin-bottom: 48px;
+    width: 496px;
+    text-align: center;
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--first-title-color);
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 .main-btn {
