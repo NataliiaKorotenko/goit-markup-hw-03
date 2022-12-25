@@ -1,4 +1,3 @@
-
 :root {
 --first-title-color: #FFFFFF;
 --second-title-color: #2E2F42;
@@ -246,7 +245,6 @@ logo {
 .team-catalog {
     display: flex;
     flex-wrap: wrap;
-    width: calc ((100% - 72) /4);
     gap: 24px;
     padding-bottom: 120px;
 }
@@ -280,7 +278,7 @@ logo {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
 }  
 
