@@ -206,6 +206,9 @@ logo {
     color: var(--text-color);
 }
 
+.product {
+    padding-bottom: 120px;
+} 
 .product-title {
     text-align: center;
     margin-bottom: 72px;
@@ -220,18 +223,18 @@ logo {
 .product-catalog {
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
 }
 
 /*---- TEAM----*/
 
 .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background: #F4F4FD;
     text-align: center;
 }
 
 .team-title {
-    padding-top: 120px;
     margin-bottom: 72px;
     font-family: 'Roboto';
     font-weight: 600;
@@ -245,7 +248,6 @@ logo {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding-bottom: 120px;
 }
 
 .team-item {
@@ -311,7 +313,7 @@ logo {
 }
 
 .menu {
-    padding: 96px 120px;
+    padding: 96px 0 120px;
 }
 
 .menu-catalog {
@@ -322,12 +324,11 @@ logo {
 }
 
 .menu-block {
-border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    padding-left: 16px;
 }
-
-.menu-tit,
-.menu-text {
-    padding-left: 16px;}
 
 .menu-text {
     font-family: 'Roboto';
@@ -340,15 +341,12 @@ border-bottom: 1px solid #E7E9FC;
 /*----Foooter----*/
 
 .footer {
-    padding: 100px 100px;
+    padding: 100px 0;
     background: #2E2F42;
-    margin: 0;
 }
 
-.footer-block {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
+.footer-container {
+    margin: 0 auto;
 }
 
 .footer-logo {
