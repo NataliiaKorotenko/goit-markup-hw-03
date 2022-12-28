@@ -345,6 +345,9 @@ logo {
     background: #2E2F42;
 }
 
+.footer-container {
+
+}
 
 .footer-logo {
     font-family: 'Raleway';
@@ -367,6 +370,7 @@ logo {
 }
 
 .footer-text {
+    margin-top: 16px;;
     max-width: 264px;
     font-family: 'Roboto';
     font-size: 16px;
