@@ -346,7 +346,7 @@ logo {
 }
 
 .footer-container {
-
+margin-bottom: 16px;
 }
 
 .footer-logo {
@@ -370,7 +370,6 @@ logo {
 }
 
 .footer-text {
-    margin-top: 16px;;
     max-width: 264px;
     font-family: 'Roboto';
     font-size: 16px;
